@@ -10,7 +10,7 @@ require('dotenv').config()
 const Place = require('./models/placeSchema.js')
 
 //do I need this?
-const mongoURI = 'mongodb://localhost:27017/travelblog';
+// const mongoURI = 'mongodb://localhost:27017/travelblog';
 
 //___________________
 //Port
