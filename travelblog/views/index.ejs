@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang ="en" dire="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>My Travel Blog | <%= titleTag %></title>
+      <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Places I've Visited</h1>
+    <% for(let i=0; i < placeData.length; i++){
+    %>
+    <h2> <%= placeData[i].destination %></h2>
+    <h3> <%= placeData[i].languages %> </h3>
+    <% } %>
+  </body>
+  </html>
