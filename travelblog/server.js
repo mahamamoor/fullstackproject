@@ -69,10 +69,11 @@ const placeSeedData = require('./models/seed.js');
 
 app.get('/travelblog', (req, res) => {
   Place.find({}, (err, allPlaces) => {
-    res.render('index.ejs', {
-      placeData: allPlaces,
-      titleTag: "Place"
-    })
+    res.send(allPlaces)
+    // res.render('index.ejs', {
+    //   placeData: allPlaces,
+    //   titleTag: "Place"
+    // })
   })
 })
 
