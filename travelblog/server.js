@@ -57,9 +57,9 @@ const placeSeedData = require('./models/seed.js');
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/' , (req, res) => {
+//   res.send('Hello World!');
+// });
 
 // app.get('/travelblog/data/seed', (req, res) => {
 //   Place.create(placeSeedData, (err, data) => {
