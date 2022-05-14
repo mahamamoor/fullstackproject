@@ -7,6 +7,11 @@ const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
+const Place = require('./models/placeSchema.js')
+
+//do I need this?
+// const mongoURI = 'mongodb://localhost:27017/travelblog';
+
 //___________________
 //Port
 //___________________
@@ -45,14 +50,76 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
+//Grabbing data from the other file
+const placeSeedData = require('./models/seed.js');
 
 //___________________
 // Routes
 //___________________
 //localhost:3000
 app.get('/' , (req, res) => {
-  res.send('Hello World!');
+  res.redirect('/travelblog');
 });
+
+// app.get('/travelblog/data/seed', (req, res) => {
+//   Place.create(placeSeedData, (err, data) => {
+//     res.redirect('/travelblog')
+//   })
+// })
+
+app.get('/travelblog', (req, res) => {
+  Place.find({}, (err, allPlaces) => {
+    res.render('index.ejs', {
+      placeData: allPlaces,
+      titleTag: "Place"
+    })
+  })
+})
+
+// app.post('/travelblog', (req, res) => {
+//   Place.create(req.body, (err, createdPlace) => {
+//     if (err) {
+//       console.log(error);
+//     }
+//     // console.log(createdDish);
+//     res.redirect('/travelblog')
+//   })
+// })
+
+// app.get('/travelblog/new', (req, res) => {
+//   res.render('new.ejs');
+// })
+//
+app.put('/travelblog/:id', (req, res) => {
+  Place.findByIdAndUpdate({_id: req.params.id}, req.body, {new:true}, (err, updatedPlace) => {
+    res.redirect('/travelblog')
+  })
+})
+//
+// app.get('/travelblog/:id', (req, res) => {
+//   Place.findById(req.params.id, (err, foundPlace) => {
+//     // console.log(foundDish);
+//     res.render('show.ejs', {
+//       placeData: foundPlace,
+//       titleTag: "Destination Info"
+//     })
+//   })
+// })
+//
+app.get('/travelblog/:id/edit', (req, res) => {
+  Place.findById(req.params.id, (err, foundPlace) => {
+    console.log(foundPlace);
+    res.render('edit.ejs', {
+      placeData: foundPlace,
+    })
+  })
+})
+//
+// app.delete('/travelblog/:id', (req, res) => {
+//   Place.deleteOne({_id: req.params.id}, (err, deletedPlace) => {
+//     res.redirect('/travelblog')
+//   })
+// })
 
 //___________________
 //Listener
