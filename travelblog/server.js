@@ -57,9 +57,9 @@ const placeSeedData = require('./models/seed.js');
 // Routes
 //___________________
 //localhost:3000
-// app.get('/' , (req, res) => {
-//   res.send('Hello World!');
-// });
+app.get('/' , (req, res) => {
+  res.redirect('/travelblog');
+});
 
 // app.get('/travelblog/data/seed', (req, res) => {
 //   Place.create(placeSeedData, (err, data) => {
@@ -69,11 +69,10 @@ const placeSeedData = require('./models/seed.js');
 
 app.get('/travelblog', (req, res) => {
   Place.find({}, (err, allPlaces) => {
-    res.send(allPlaces)
-    // res.render('index.ejs', {
-    //   placeData: allPlaces,
-    //   titleTag: "Place"
-    // })
+    res.render('index.ejs', {
+      placeData: allPlaces,
+      titleTag: "Place"
+    })
   })
 })
 
