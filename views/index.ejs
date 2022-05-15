@@ -9,8 +9,11 @@
     <h1>Places I've Visited</h1>
     <% for(let i=0; i < placeData.length; i++){
     %>
-    <h2> <%= placeData[i].destination %></h2>
-    <h3> <%= placeData[i].languages %> </h3>
+    <h2> <%= placeData[i].destination %> </h2>
+    <img src="<%= placeData[i].img %> " alt="">
+    <nav>
+      <a href="/travelblog/<%=placeData[i]._id%>"><button type="button" name="button">More Info</button></a>
+    </nav>
     <% } %>
   </body>
   </html>

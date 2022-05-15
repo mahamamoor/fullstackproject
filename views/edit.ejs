@@ -2,10 +2,21 @@
 <html lang ="en" dire="ltr">
   <head>
       <meta charset="utf-8">
-      <title>My Travel Blog | </title>
+      <title>My Travel Blog | Edit </title>
       <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <h1>Edit Places I've Visited</h1>
+    <form action="/travelblog/<%=placeData._id%>?_method=PUT" method="POST">
+      Destination: <input type="text" required="required" name="destination" value="<%placeData.destination%>"> <br/>
+      Image url: <input type="url" name="img" value="<%placeData.img%>"> <br/>
+      Languages: <input type="text" name="languages" value="<%placeData.languages%>"> <br/>
+      Population: <input type="text" name="population" value="<%placeData.population%>"> <br/>
+      Year Traveled: <input type="text" name="yearTraveled" value="<%placeData.yearTraveled%>"> <br/>
+      Fun Fact: <input type="text" name="funFact" value="<%placeData.funFact%>"> <br/>
+      Known For: <input type="text" name="knownFor" value="<%placeData.knownFor%>"> <br/>
+      Things to do: <input type="url" name="thingToDo" value="<%placeData.thingsToDo%>"> <br/>
+      <input type="submit" value="confirm changes"/>
+    </form>
   </body>
   </html>

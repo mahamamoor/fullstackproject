@@ -61,11 +61,11 @@ app.get('/' , (req, res) => {
   res.redirect('/travelblog');
 });
 
-// app.get('/travelblog/data/seed', (req, res) => {
-//   Place.create(placeSeedData, (err, data) => {
-//     res.redirect('/travelblog')
-//   })
-// })
+app.get('/travelblog/data/seed', (req, res) => {
+  Place.create(placeSeedData, (err, data) => {
+    res.redirect('/travelblog')
+  })
+})
 
 app.get('/travelblog', (req, res) => {
   Place.find({}, (err, allPlaces) => {
@@ -76,36 +76,21 @@ app.get('/travelblog', (req, res) => {
   })
 })
 
-// app.post('/travelblog', (req, res) => {
-//   Place.create(req.body, (err, createdPlace) => {
-//     if (err) {
-//       console.log(error);
-//     }
-//     // console.log(createdDish);
-//     res.redirect('/travelblog')
-//   })
-// })
+app.get('/travelblog/new', (req, res) => {
+  res.render('new.ejs');
+  console.log('new destination added')
+})
 
-// app.get('/travelblog/new', (req, res) => {
-//   res.render('new.ejs');
-// })
-//
-app.put('/travelblog/:id', (req, res) => {
-  Place.findByIdAndUpdate({_id: req.params.id}, req.body, {new:true}, (err, updatedPlace) => {
-    res.redirect('/travelblog')
+app.get('/travelblog/:id', (req, res) => {
+  Place.findById(req.params.id, (err, foundPlace) => {
+    // console.log(foundDish);
+    res.render('show.ejs', {
+      placeData: foundPlace,
+      titleTag: "Destination Info"
+    })
   })
 })
-//
-// app.get('/travelblog/:id', (req, res) => {
-//   Place.findById(req.params.id, (err, foundPlace) => {
-//     // console.log(foundDish);
-//     res.render('show.ejs', {
-//       placeData: foundPlace,
-//       titleTag: "Destination Info"
-//     })
-//   })
-// })
-//
+
 app.get('/travelblog/:id/edit', (req, res) => {
   Place.findById(req.params.id, (err, foundPlace) => {
     console.log(foundPlace);
@@ -114,12 +99,28 @@ app.get('/travelblog/:id/edit', (req, res) => {
     })
   })
 })
-//
-// app.delete('/travelblog/:id', (req, res) => {
-//   Place.deleteOne({_id: req.params.id}, (err, deletedPlace) => {
-//     res.redirect('/travelblog')
-//   })
-// })
+
+app.post('/travelblog', (req, res) => {
+  Place.create(req.body, (err, createdPlace) => {
+    if (err) {
+      console.log(error);
+    }
+    // console.log(createdDish);
+    res.redirect('/travelblog')
+  })
+})
+
+app.put('/travelblog/:id', (req, res) => {
+  Place.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedPlace) => {
+    res.redirect('/travelblog')
+  })
+})
+
+app.delete('/travelblog/:id', (req, res) => {
+  Place.deleteOne({_id: req.params.id}, (err, deletedPlace) => {
+    res.redirect('/travelblog')
+  })
+})
 
 //___________________
 //Listener

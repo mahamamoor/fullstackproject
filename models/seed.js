@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     destination: "Bermuda",
-    img: "https://cdn11.bigcommerce.com/s-w6fxwapwzi/images/stencil/1280x1280/products/2489/5286/2x3-bermuda-flag-image__42649.1582735613.jpg?c=1",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bermuda.svg/130px-Flag_of_Bermuda.svg.png",
     languages: ["English"],
     population: 63903,
     yearTraveled: 2018,
@@ -42,7 +42,7 @@ module.exports = [
   },
   {
     destination: "Egypt",
-    img: "https://www.google.com/aclk?sa=l&ai=DChcSEwjsgtrL4tz3AhWzjVsKHUxVDcwYABABGgJ5bQ&sig=AOD64_1n9HUs2R8DLZ12WwcrNmepE37ebQ&adurl&ctype=5&ved=2ahUKEwjmr87L4tz3AhUyn3IEHUosAmIQvhd6BAgBEGY",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/250px-Flag_of_Egypt.svg.png",
     languages: ["Arabic"],
     population: 102300000,
     yearTraveled: 2018,
@@ -69,6 +69,16 @@ module.exports = [
     funFact: "80% of Greece is made up of mountains.",
     knownFor: ["Cradle of Western Civilization", "The birthplace of Democracy", "The Olympic Games"],
     thingsToDo: "https://www.cntraveler.com/tag/greece"
+  },
+  {
+    place: "Hawaii",
+    img: "A7ED0EF3-4BA2-4DD8-97C7-BF7984E53C92.jpeg",
+    languages: ["English", "Hawaiian"],
+    population: 1420000,
+    yearTraveled: 2021,
+    funFact: "Hawaii is the world's largest island chain.",
+    knownFor: ["Coastlines dotted with volcanoes", "Poke", "Ancient Culture", "Surfing"],
+    thingsToDo: "https://www.cntraveler.com/gallery/best-things-to-do-in-maui"
   },
   {
     place: "Honduras",
@@ -150,58 +160,64 @@ module.exports = [
     knownFor: ["Olive Trees", "Holy Land", "Hospitality"],
     thingsToDo: "https://www.cntraveler.com/story/palestine-malak-mattar-locals-guide"
   },
-  // {
-  //   place: "Puerto Rico",
-  //   languages:
-  //   population:
-  //   yearTraveled:
-  //   funFact:
-  //   knownFor:
-  //   thingsToDo:
-  // },
-  // {
-  //   place: "Spain",
-  //   languages:
-  //   population:
-  //   yearTraveled:
-  //   funFact:
-  //   knownFor:
-  //   thingsToDo:
-  // },
-  // {
-  //   place: "Switzerland",
-  //   languages:
-  //   population:
-  //   yearTraveled:
-  //   funFact:
-  //   knownFor:
-  //   thingsToDo:
-  // },
-  // {
-  //   place: "Turks and Caicos",
-  //   languages:
-  //   population:
-  //   yearTraveled:
-  //   funFact:
-  //   knownFor:
-  //   thingsToDo:
-  // },
-  // {
-  //   place: "Turkey",
-  //   languages:
-  //   population:
-  //   yearTraveled:
-  //   funFact:
-  //   knownFor:
-  //   thingsToDo:
-  // },
-  // {
-  //   place: "Uzbekistan",
-  //   languages:
-  //   population:
-  //   yearTraveled:
-  //   funFact:
-  //   knownFor:
-  //   thingsToDo:
-  // }
+  {
+    place: "Puerto Rico",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_Puerto_Rico.svg/255px-Flag_of_Puerto_Rico.svg.png",
+    languages: ["Spanish", "English"],
+    population: 3194000,
+    yearTraveled: 2014,
+    funFact: "El Yunque is the only rainforest in the U.S. Forest System and is in Puerto Rico",
+    knownFor: ["Rum", "Beaches", "Bioluminescent bays"],
+    thingsToDo: "https://www.cntraveler.com/destinations/puerto-rico"
+  },
+  {
+    place: "Spain",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/125px-Bandera_de_Espa%C3%B1a.svg.png",
+    languages: ["Spanish"],
+    population: 47350000,
+    yearTraveled: 2018,
+    funFact: "The first modern novel is Spanish",
+    knownFor: ["Siestas", "Tapas", "Wine"],
+    thingsToDo: "https://www.cntraveler.com/gallery/best-things-to-do-in-barcelona"
+  },
+  {
+    place: "Switzerland",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/100px-Flag_of_Switzerland.svg.png",
+    languages: ["German", "French", "Italian"],
+    population: 8637000,
+    yearTraveled: 2016,
+    funFact: "Animals in Switzerland have rights",
+    knownFor: ["Mountains", "Lakes", "Beautiful Villages"],
+    thingsToDo: "https://www.cntraveller.com/article/travel-guide-geneva"
+  },
+  {
+    place: "Turks and Caicos",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg/130px-Flag_of_the_Turks_and_Caicos_Islands.svg.png",
+    languages: ["English"],
+    population: 38718,
+    yearTraveled: 2016,
+    funFact: "The Turks and Caicos is the site of an annual Humpback whale migration",
+    knownFor: ["White sand beaches", "Turquoise waters", "Watersports"],
+    thingsToDo: "https://www.cntraveller.com/article/turks-caicos-islands"
+  },
+  {
+    place: "Turkey",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/125px-Flag_of_Turkey.svg.png",
+    languages: ["Turkish"],
+    population: 84340000,
+    yearTraveled: 2017,
+    funFact: "Turkey's Black Sea coastline stretches for 1,175 km",
+    knownFor: ["Hot Air Balloons", "Istanbul", "Turkish Coffee", "Bazaars", "Ephesus"],
+    thingsToDo: "https://www.cntraveler.com/story/turkey-gul-hurgel-locals-guide"
+  },
+  {
+    place: "Uzbekistan",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/125px-Flag_of_Uzbekistan.svg.png",
+    languages: ["Uzbek", "Russian", "Persian"],
+    population: 34230000,
+    yearTraveled: 2019,
+    funFact: "Samarkand is more than 2750 years old.",
+    knownFor: ["Silk Road", "Ceramics", "Sheeps", "Leading Cotton Producer"],
+    thingsToDo: "https://www.cntraveler.com/story/finding-the-heart-of-the-ancient-silk-road-in-uzbekistan"
+  }
 ]

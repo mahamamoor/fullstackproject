@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const placeSchema = new Schema({
   destination: {type: String, required: true},
-  img: {type: String, required: true},
+  img: String,
   languages: [String],
   population: Number,
   yearTraveled: Number,

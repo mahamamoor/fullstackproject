@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang ="en" dire="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>My Travel Blog | <%= titleTag %></title>
+      <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Places I've Visited</h1>
+    <h2> <%= placeData.destination %> </h2>
+    <img src="<%= placeData.img %> " alt="">
+    <h4> Languages spoken: </h4>
+    <h4> <%= placeData.languages %> </h4>
+    <h4> Population: </h4>
+    <h4> <%= placeData.populations %> </h4>
+    <h4> Year I traveled here: </h4>
+    <h4> <%= placeData.yearTraveled %> </h4>
+    <h4> Fun Facts: </h4>
+    <h4> <%= placeData.funFact %> </h4>
+    <h4> They're known for: </h4>
+    <h4> <%= placeData.knownFor %> </h4>
+    <h4> Here are things to do: </h4>
+    <a href="<%= placeData.thingsToDo %>"> Things to Do</a>
+    <nav>
+      <a href="/travelblog">Return to Main Menu</a>
+      <a href="/travelblog/<%=placeData._id%>/edit">Edit Destination Info</a>
+      <form action="/travelblog/<%=placeData._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Destination">
+      </form>
+    </nav>
+  </body>
+</html>
