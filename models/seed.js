@@ -61,7 +61,7 @@ module.exports = [
     thingToDo: "https://www.cntraveler.com/gallery/best-things-to-do-in-paris"
   },
   {
-    place: "Greece",
+    destination: "Greece",
     img: "https://cdn.britannica.com/49/1049-004-AE4BAD3E/Flag-Greece.jpg",
     languages: ["Greek"],
     population: 10720000,
@@ -71,8 +71,8 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/tag/greece"
   },
   {
-    place: "Hawaii",
-    img: "A7ED0EF3-4BA2-4DD8-97C7-BF7984E53C92.jpeg",
+    destination: "Hawaii",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Hawaii.svg/2560px-Flag_of_Hawaii.svg.png",
     languages: ["English", "Hawaiian"],
     population: 1420000,
     yearTraveled: 2021,
@@ -81,7 +81,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/gallery/best-things-to-do-in-maui"
   },
   {
-    place: "Honduras",
+    destination: "Honduras",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flag_of_Honduras.svg/510px-Flag_of_Honduras.svg.png",
     languages: ["Spanish"],
     population: 9905000,
@@ -91,7 +91,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveller.com/article/travel-guide-honduras"
   },
   {
-    place: "Italy",
+    destination: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/480px-Flag_of_Italy.svg.png",
     img: "https://en.wikipedia.org/wiki/File:Flag_of_Italy.svg",
     languages: ["Italian"],
     population: 59550000,
@@ -101,7 +101,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/story/secret-things-to-do-in-italy",
   },
   {
-    place: "Japan",
+    destination: "Japan",
     img: "https://www.zoro.com/static/cms/product/full/Z254I-fo_oy.JPG",
     languages: ["Japanese"],
     population: 125800000,
@@ -111,7 +111,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/gallery/best-things-to-do-in-tokyo"
   },
   {
-    place: "Jordan",
+    destination: "Jordan",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/510px-Flag_of_Jordan.svg.png",
     languages: ["Arabic"],
     population: 10200000,
@@ -121,7 +121,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveller.com/gallery/best-things-to-do-jordan"
   },
   {
-    place: "Lebanon",
+    destination: "Lebanon",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Lebanon.svg/510px-Flag_of_Lebanon.svg.png",
     languages: ["Arabic", "French"],
     population: 6825000,
@@ -131,7 +131,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveller.com/gallery/things-to-do-in-beirut-lebanon"
   },
   {
-    place: "Mexico",
+    destination: "Mexico",
     img: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
     languages: ["Spanish"],
     population: 128900000,
@@ -141,7 +141,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/galleries/2014-11-20/5-things-to-do-in-tulum-mexico"
   },
   {
-    place: "Pakistan",
+    destination: "Pakistan",
     img: "https://www.mrflag.com/wp-content/uploads/2018/11/Pakistan.png",
     languages: ["Urdu", "English"],
     population: 220900000,
@@ -151,7 +151,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/story/pakistan-mustafa-hasan-locals-guide"
   },
   {
-    place: "Palestine",
+    destination: "Palestine",
     img: "https://cdn.britannica.com/74/84674-004-C0E414EA/Flag-Palestinian-Authority-Palestine.jpg",
     languages: ["Arabic"],
     population: 4803000,
@@ -161,7 +161,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/story/palestine-malak-mattar-locals-guide"
   },
   {
-    place: "Puerto Rico",
+    destination: "Puerto Rico",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flag_of_Puerto_Rico.svg/255px-Flag_of_Puerto_Rico.svg.png",
     languages: ["Spanish", "English"],
     population: 3194000,
@@ -171,7 +171,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/destinations/puerto-rico"
   },
   {
-    place: "Spain",
+    destination: "Spain",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/125px-Bandera_de_Espa%C3%B1a.svg.png",
     languages: ["Spanish"],
     population: 47350000,
@@ -181,7 +181,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/gallery/best-things-to-do-in-barcelona"
   },
   {
-    place: "Switzerland",
+    destination: "Switzerland",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/100px-Flag_of_Switzerland.svg.png",
     languages: ["German", "French", "Italian"],
     population: 8637000,
@@ -191,7 +191,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveller.com/article/travel-guide-geneva"
   },
   {
-    place: "Turks and Caicos",
+    destination: "Turks and Caicos",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg/130px-Flag_of_the_Turks_and_Caicos_Islands.svg.png",
     languages: ["English"],
     population: 38718,
@@ -201,7 +201,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveller.com/article/turks-caicos-islands"
   },
   {
-    place: "Turkey",
+    destination: "Turkey",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/125px-Flag_of_Turkey.svg.png",
     languages: ["Turkish"],
     population: 84340000,
@@ -211,7 +211,7 @@ module.exports = [
     thingsToDo: "https://www.cntraveler.com/story/turkey-gul-hurgel-locals-guide"
   },
   {
-    place: "Uzbekistan",
+    destination: "Uzbekistan",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/125px-Flag_of_Uzbekistan.svg.png",
     languages: ["Uzbek", "Russian", "Persian"],
     population: 34230000,

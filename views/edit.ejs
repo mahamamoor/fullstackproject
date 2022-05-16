@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    <div class="container">
     <h1>Edit Places I've Visited</h1>
     <form action="/travelblog/<%=placeData._id%>?_method=PUT" method="POST">
       Destination: <input type="text" required="required" name="destination" value="<%placeData.destination%>"> <br/>
@@ -18,5 +19,6 @@
       Things to do: <input type="url" name="thingToDo" value="<%placeData.thingsToDo%>"> <br/>
       <input type="submit" value="confirm changes"/>
     </form>
+    </div>
   </body>
   </html>

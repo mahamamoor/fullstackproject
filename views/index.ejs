@@ -6,14 +6,21 @@
       <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    <div class="container">
     <h1>Places I've Visited</h1>
+    <div class="row">
     <% for(let i=0; i < placeData.length; i++){
     %>
+    <div class="col-md-3">
     <h2> <%= placeData[i].destination %> </h2>
     <img src="<%= placeData[i].img %> " alt="">
+    </div>
     <nav>
       <a href="/travelblog/<%=placeData[i]._id%>"><button type="button" name="button">More Info</button></a>
     </nav>
     <% } %>
+    </div>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
   </html>
