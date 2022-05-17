@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang ="en" dire="ltr">
   <head>
-      <meta charset="utf-8">
-      <title>My Travel Blog | Edit </title>
-      <link rel="stylesheet" href="/css/style.css">
+      <%- include ('./partials/head.ejs') %>
   </head>
   <body>
     <div class="container">
-    <h1>Edit Places I've Visited</h1>
+      <!-- ============ HEADER ============ -->
+      <%- include('./partials/header.ejs') %>
     <form action="/travelblog/<%=placeData._id%>?_method=PUT" method="POST">
       Destination: <input type="text" required="required" name="destination" value="<%placeData.destination%>"> <br/>
       Image url: <input type="url" name="img" value="<%placeData.img%>"> <br/>
@@ -20,5 +19,7 @@
       <input type="submit" value="confirm changes"/>
     </form>
     </div>
+    <!-- ============ FOOTER ============ -->
+      <%- include ('./partials/footer.ejs') %>
   </body>
   </html>

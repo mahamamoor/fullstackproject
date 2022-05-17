@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang ="en" dire="ltr">
   <head>
-      <meta charset="utf-8">
-      <title>My Travel Blog | <%= titleTag %></title>
-      <link rel="stylesheet" href="/css/style.css">
+      <%- include ('./partials/head.ejs') %>
   </head>
   <body>
     <div class="container">
-    <h1>Places I've Visited</h1>
+      <!-- ============ HEADER ============ -->
+      <%- include('./partials/header.ejs') %>
     <h2> <%= placeData.destination %> </h2>
     <img src="<%= placeData.img %> " alt="">
     <h4> Languages spoken: </h4>
@@ -21,14 +20,15 @@
     <h4> They're known for: </h4>
     <h4> <%= placeData.knownFor %> </h4>
     <h4> Here are things to do: </h4>
-    <a href="<%= placeData.thingsToDo %>"> Things to Do</a>
+    <a href="<%= placeData.thingsToDo %>" target="_blank"> Things to Do</a>
     <nav>
-      <a href="/travelblog">Return to Main Menu</a>
       <a href="/travelblog/<%=placeData._id%>/edit">Edit Destination Info</a>
       <form action="/travelblog/<%=placeData._id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete Destination">
       </form>
     </nav>
     </div>
+    <!-- ============ FOOTER ============ -->
+      <%- include ('./partials/footer.ejs') %>
   </body>
 </html>
