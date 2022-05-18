@@ -5,28 +5,30 @@
     <%- include ('./partials/head.ejs') %>
   </head>
   <body>
-  <div class="container">
-    <div class="row">
+    <div class="hero-image" alt="responsive image">
       <!-- ============ HEADER ============ -->
       <%- include('./partials/header.ejs') %>
-    <div class="hero-image">
       <div class="hero-text">
-        <p>My name is Maha Mamoor. I love to travel in my free time. Take a look at the places I've been fortunate enough to visit. What I love most about traveling is learning about other cultures, eating great food, and taking in beautiful scenery.</p>
+        <p>My name is Maha Mamoor. I love to travel in my free time. What I love most about traveling is learning about other cultures, eating great food, and taking in beautiful scenery. Take a look at the places I've been fortunate enough to visit.</p>
       </div>
     </div>
+  <div class="flag-container">
+    <div class="row">
     <% for(let i=0; i < placeData.length; i++){
     %>
-          <div class="col-4" id="card-container">
-            <div class="card">
-              <a href="/travelblog/<%=placeData[i]._id%>"><img src="<%= placeData[i].img %>"  class="card-img-top" alt=""></a>
+          <div class="col-4">
+            <div class="card" style="width: auto; height: 20rem;">
+              <p class="destination-name" style="font-size: 28px; text-align: center; margin: 2px 0px;"><%= placeData[i].destination%></p>
+              <a href="/travelblog/<%=placeData[i]._id%>"><img src="<%= placeData[i].img %>"  class="card-img-top img-fluid" style="width: auto; height: 16rem; align-content: center; margin: 2px 0px;"></a>
             </div>
         </div>
           <% } %>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <a href="/travelblog/new">Add New Destination</a>
+    <a href="/travelblog/new" class="btn btn-info" role="button">Add New Destination</a>
+    <a href="/travelblog/reflections" class="btn btn-info" role="button">Reflections</a>
+</div>
   <!-- ============ FOOTER ============ -->
     <%- include ('./partials/footer.ejs') %>
-    </div>
   </body>
 </html>
