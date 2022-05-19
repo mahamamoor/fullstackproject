@@ -7,6 +7,7 @@
     <div class="container">
       <!-- ============ HEADER ============ -->
       <%- include('./partials/header.ejs') %>
+    <a href="/travelblog" class="btn btn-info" role="button">Home</a>
     <form action="/travelblog/<%=placeData._id%>?_method=PUT" method="POST">
       Destination: <input type="text" required="required" name="destination" value="<%placeData.destination%>"> <br/>
       Image url: <input type="url" name="img" value="<%placeData.img%>"> <br/>

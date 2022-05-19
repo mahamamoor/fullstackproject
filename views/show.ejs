@@ -6,24 +6,26 @@
   <body>
     <div class="container">
     <a href="/travelblog" class="btn btn-info" role="button">Home</a>
-    <h2> <%= placeData.destination %> </h2>
-    <img src="<%= placeData.img %> " alt="">
-    <h4> Languages spoken: </h4>
-    <h4> <%= placeData.languages %> </h4>
-    <h4> Population: </h4>
-    <h4> <%= placeData.populations %> </h4>
-    <h4> Year I traveled here: </h4>
-    <h4> <%= placeData.yearTraveled %> </h4>
-    <h4> Fun Facts: </h4>
-    <h4> <%= placeData.funFact %> </h4>
-    <h4> They're known for: </h4>
-    <h4> <%= placeData.knownFor %> </h4>
-    <h4> Here are things to do: </h4>
-    <a href="<%= placeData.thingsToDo %>" target="_blank"> Things to Do</a>
-    <nav>
-      <a href="/travelblog/<%=placeData._id%>/edit">Edit Destination Info</a>
+      <div class="destinationInfo">
+        <h2> <%= placeData.destination %> </h2>
+        <img src="<%= placeData.img %> " alt="" class="flagSize">
+        <h4> Languages spoken: </h4>
+        <h4> <%= placeData.languages.join(', ') %> </h4>
+        <h4> Population: </h4>
+        <h4> <%= placeData.population %> </h4>
+        <h4> Year I traveled here: </h4>
+        <h4> <%= placeData.yearTraveled %> </h4>
+        <h4> Fun Facts: </h4>
+        <h4> <%= placeData.funFact %> </h4>
+        <h4> They're known for: </h4>
+        <h4> <%= placeData.knownFor.join(', ') %> </h4>
+        <h4> Here are things to do: </h4>
+      </div>
+    <a href="<%= placeData.thingsToDo %>" target="_blank" class="condeNastLink"> Things to Do</a>
+    <nav class="showPadding">
+      <a href="/travelblog/<%=placeData._id%>/edit" class="editMe">Edit Destination Info</a>
       <form action="/travelblog/<%=placeData._id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete Destination">
+        <input type="submit" value="Delete Destination" class="deleteMe">
       </form>
     </nav>
     </div>

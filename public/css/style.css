@@ -1,1 +1,116 @@
+body, html {
+  height: 100%;
+}
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://imgur.com/GyToHbj.jpg");
+  height: 80vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10px;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.flag-container{
+  background-color: #0B172A;
+  padding: 50px 20px;
+}
+.card{
+  background-color: #0B172A !important;
+  border: none !important;
+}
+.col-4{
+  padding: 30px;
+}
 
+.fa-1x {
+  font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+  cursor: pointer;
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+}
+.dark-blue-text {
+  color: red;
+}
+.dark-pink-text {
+  color: red;
+}
+.dark-amber-text {
+  color: red;
+}
+.dark-teal-text {
+  color: red;
+}
+#navbarSupportedContent1 {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+}
+.add-new{
+  background-color: #463940;
+}
+.footer{
+  background-color: #463940;
+}
+.footer-text{
+  color: #bc4123;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 2px;
+}
+.footer-text-year{
+  padding-top: 0px;
+  padding-bottom: 20px;
+  color: #bc4123;
+  text-align: center;
+}
+.destination-name{
+  color: white;
+}
+
+.flagSize{
+  width: 26rem;
+  height: 16rem;
+}
+
+.condeNastLink {
+  font-size: 24px;
+  text-decoration: none;
+  color: #bc4123;
+}
+
+.editMe{
+  font-size: 24px;
+  text-decoration: none;
+  color: #bc4123;
+}
+
+.destinationInfo{
+  font-size: 26px;
+  color: #463940;
+}
+
+.deleteMe{
+  background-color: #bc4123;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.showPadding{
+  padding-bottom: 15px;
+}
+/* hero image source: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+/* hero slider source: https://alvarotrigo.com/blog/how-to-create-websites-fullscreen-sections-html-and-css/ */

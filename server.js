@@ -71,14 +71,22 @@ app.get('/travelblog', (req, res) => {
   Place.find({}, (err, allPlaces) => {
     res.render('index.ejs', {
       placeData: allPlaces,
-      titleTag: "Place"
+      tabTitle: 'Place'
     })
   })
 })
 
 app.get('/travelblog/new', (req, res) => {
-  res.render('new.ejs');
-  console.log('new destination added')
+  res.render('new.ejs', {
+    tabTitle: 'Add New Destination'
+  });
+  // console.log('new destination added')
+})
+
+app.get('/travelblog/reflections', (req, res) => {
+  res.render('reflections.ejs', {
+    tabTitle: 'My reflections'
+  });
 })
 
 app.get('/travelblog/:id', (req, res) => {
@@ -86,7 +94,7 @@ app.get('/travelblog/:id', (req, res) => {
     // console.log(foundDish);
     res.render('show.ejs', {
       placeData: foundPlace,
-      titleTag: "Destination Info"
+      tabTitle: "Destination Info"
     })
   })
 })
@@ -96,6 +104,7 @@ app.get('/travelblog/:id/edit', (req, res) => {
     console.log(foundPlace);
     res.render('edit.ejs', {
       placeData: foundPlace,
+      tabTitle: 'Edit Destination'
     })
   })
 })

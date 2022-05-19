@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     destination: "Bermuda",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bermuda.svg/130px-Flag_of_Bermuda.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bermuda.svg/1280px-Flag_of_Bermuda.svg.png",
     languages: ["English"],
     population: 63903,
     yearTraveled: 2018,
@@ -32,7 +32,7 @@ module.exports = [
   },
   {
     destination: "Canada",
-    img: "https://cdn11.bigcommerce.com/s-w6fxwapwzi/images/stencil/1280x1280/products/2586/5421/2x3-canada-flag-image__99191.1582736015.jpg?c=1",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/255px-Flag_of_Canada_%28Pantone%29.svg.png",
     languages: ["French", "English"],
     population: 38010000,
     yearTraveled: 2011,
@@ -42,7 +42,7 @@ module.exports = [
   },
   {
     destination: "Egypt",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/250px-Flag_of_Egypt.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/1024px-Flag_of_Egypt.svg.png",
     languages: ["Arabic"],
     population: 102300000,
     yearTraveled: 2018,
@@ -91,8 +91,8 @@ module.exports = [
     thingsToDo: "https://www.cntraveller.com/article/travel-guide-honduras"
   },
   {
-    destination: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/480px-Flag_of_Italy.svg.png",
-    img: "https://en.wikipedia.org/wiki/File:Flag_of_Italy.svg",
+    destination: "Italy",
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/480px-Flag_of_Italy.svg.png",
     languages: ["Italian"],
     population: 59550000,
     yearTraveled: 2018,
@@ -102,7 +102,7 @@ module.exports = [
   },
   {
     destination: "Japan",
-    img: "https://www.zoro.com/static/cms/product/full/Z254I-fo_oy.JPG",
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1024px-Flag_of_Japan.svg.png",
     languages: ["Japanese"],
     population: 125800000,
     yearTraveled: 2018,
@@ -172,7 +172,7 @@ module.exports = [
   },
   {
     destination: "Spain",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/125px-Bandera_de_Espa%C3%B1a.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1024px-Bandera_de_Espa%C3%B1a.svg.png",
     languages: ["Spanish"],
     population: 47350000,
     yearTraveled: 2018,
@@ -182,7 +182,7 @@ module.exports = [
   },
   {
     destination: "Switzerland",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/100px-Flag_of_Switzerland.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Switzerland.svg/800px-Flag_of_Switzerland.svg.png",
     languages: ["German", "French", "Italian"],
     population: 8637000,
     yearTraveled: 2016,
@@ -192,7 +192,7 @@ module.exports = [
   },
   {
     destination: "Turks and Caicos",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg/130px-Flag_of_the_Turks_and_Caicos_Islands.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg/1280px-Flag_of_the_Turks_and_Caicos_Islands.svg.png",
     languages: ["English"],
     population: 38718,
     yearTraveled: 2016,
@@ -202,7 +202,7 @@ module.exports = [
   },
   {
     destination: "Turkey",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/125px-Flag_of_Turkey.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1024px-Flag_of_Turkey.svg.png",
     languages: ["Turkish"],
     population: 84340000,
     yearTraveled: 2017,
@@ -212,7 +212,7 @@ module.exports = [
   },
   {
     destination: "Uzbekistan",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/125px-Flag_of_Uzbekistan.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1280px-Flag_of_Uzbekistan.svg.png",
     languages: ["Uzbek", "Russian", "Persian"],
     population: 34230000,
     yearTraveled: 2019,
